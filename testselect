@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "What is your favourite song?"
+select var in "God is a girl" "Fu*k U" "Who say";do
+  break;
+done
+[ -z "$var" ] && { echo "Bad choise.";exit 1; }
+echo "Your choise is $var."
